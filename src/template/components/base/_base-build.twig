@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include "../header/_header-build.twig" with {header: block('header')} %}
+
+    <body>
+        {% block content %}
+        {% endblock %}
+
+        {% include "../footer/_footer-build.twig" with {footer: block('footer')} %}
+    </body>
+
+</html>
